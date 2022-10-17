@@ -72,7 +72,7 @@ export default function Home() {
         signer
       );
       const address = await signer.getAddress();
-      const _joinedWhitelist = await whitelistContract.whitelistedaddresses(
+      const _joinedWhitelist = await whitelistContract.whitelistedAddresses(
         address
       );
       setJoinedWhitelist(_joinedWhitelist);
